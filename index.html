@@ -16,7 +16,8 @@
 
 
     <script>
-        // 2.
+        // 1.
+        console.log('Задача 1');
 
         for (let i = 0; i <= 10; i++) {
             if (!i) {
@@ -29,6 +30,67 @@
                 console.log(`${i} - четное`);
             }
         }
+
+
+        // 2.
+        console.log('Задача 2');
+
+        const myArr = [1, 2, 3, 4, 5, 6, 7]
+        console.log(`Массив [${myArr}]`);
+        const myArrNew = [];
+        let numA = 5;
+        let numB = 6;
+        for (let i = 0; i < myArr.length; i++) {
+            if (myArr[i] == numA | myArr[i] == numB) {} else {
+                myArrNew.push(myArr[i]);
+            }
+        }
+        console.log(`Массив получился [${myArrNew}]`);
+        console.log(myArrNew);
+
+
+
+        // 3.
+
+        console.log('Задача 3');
+        const myArray = [];
+        sumArray = 0;
+        minArray = 0;
+        let min = 1;
+        let max = 10;
+        let searchNumber = 3;
+        count = 0;
+        for (let i = 0; i < 5; i++) {
+            myArray[i] = Math.floor(Math.random() * (max - min) + min);
+            sumArray += myArray[i];
+            minArray = Math.min.apply(null, myArray);
+            if (myArray[i] === searchNumber) {
+                count++;
+            }
+        }
+        console.log(`Массив получился [${myArray}]`);
+        console.log('1. Рассчитать сумму элементов этого массива');
+        console.log(`Сумма элементов массива равна : ${sumArray}`);
+        console.log(`2. Найти минимальное число`);
+        console.log(`Минимальное число в массиве: ${minArray}`);
+        console.log(`3. Найти есть ли в этом массиве число 3`);
+        console.log(`Искомое число: ${searchNumber} встречается в массиве ${count} раз`);
+
+
+
+
+        // 4.
+        // const starArr = [];
+        // const result = String('+')
+        // for (let i = 0; i <= 5; i++) {
+        //     starArr[i] = starArr[i] + result;
+        //     console.log(starArr[i]);
+        //     console.log(result);
+
+
+        // }
+
+        // // console.log(starArr[i]);
     </script>
 </body>
 
